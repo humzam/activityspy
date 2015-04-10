@@ -5,13 +5,53 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import static android.util.Log.*;
 
 public class MainActivity extends ActionBarActivity {
+
+    public static final String TAG = "MainActivity";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        i(TAG, "onCreate event fired");
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        i(TAG, "onStart event fired");
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        i(TAG, "onStop event fired");
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        i(TAG, "onResume event fired");
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        i(TAG, "onPause event fired");
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        i(TAG, "onRestart event fired");
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        e(TAG, "We're going down, Captain!");
     }
 
 
