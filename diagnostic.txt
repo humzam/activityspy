@@ -1,0 +1,11 @@
+* daemon not running. starting it now on port 5037 *
+* daemon started successfully *
+I/MainActivity( 1322): onCreate event fired
+I/MainActivity( 1322): onStart event fired
+I/MainActivity( 1322): onResume event fired
+I/MainActivity( 1322): onPause event fired
+I/MainActivity( 1322): onStop event fired
+E/MainActivity( 1322): We're going down, Captain!
+I/MainActivity( 1322): onCreate event fired
+I/MainActivity( 1322): onStart event fired
+I/MainActivity( 1322): onResume event fired

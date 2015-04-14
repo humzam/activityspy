@@ -16,6 +16,9 @@ public class MainActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         i(TAG, "onCreate event fired");
+        if (savedInstanceState != null) {
+            i(TAG, savedInstanceState.toString());
+        }
     }
 
     @Override
